@@ -1,5 +1,5 @@
 # action.yml
-name: 'Flutter Action'
+name: 'Flutter test & compile'
 description: 'Esegue il test e la build di un progetto Flutter.'
 inputs:
   channel:
