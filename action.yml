@@ -1,0 +1,16 @@
+# action.yml
+name: 'Flutter Action'
+description: 'Esegue il test e la build di un progetto Flutter.'
+inputs:
+  channel:
+    description: 'Flutter channel'
+    required: true
+    default: 'stable'
+outputs:
+  ls:
+    description: 'Prova di ls'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.channel }}
