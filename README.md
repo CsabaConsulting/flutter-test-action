@@ -1,21 +1,21 @@
-# Flutter docker action
+# Flutter test action
 
-Questa azione consente di testare e compilare un'app Flutter disponendo di un'installazione pulita di Flutter.
+This action allows you to test and build a Flutter app with a clean installation of Flutter.
 
 ## Inputs
 
 ### `channel`
 
-**Required** Il canale di Flutter da usare per0 il test e la build. Default `"stable"`.
+**Required** The Flutter channel to use for testing and build. The default is `"stable"`.
 
 ## Outputs
 
 ### `ls`
 
-Il listing della directory.
+Directory listing.
 
 ## Example usage
 
-uses: actions/flutter-action@v1
+uses: actions/flutter-test-action@v1
 with:
   channel: 'stable'
