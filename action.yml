@@ -1,6 +1,6 @@
 # action.yml
-name: 'Flutter test & compile'
-description: 'Esegue il test e la build di un progetto Flutter.'
+name: 'Flutter test & build'
+description: 'Test and build a Flutter project.'
 inputs:
   channel:
     description: 'Flutter channel'
@@ -8,7 +8,7 @@ inputs:
     default: 'stable'
 outputs:
   ls:
-    description: 'Prova di ls'
+    description: 'Result of ls'
 runs:
   using: 'docker'
   image: 'Dockerfile'
